@@ -9,7 +9,8 @@
 
 <?php
 if ($_POST) {
-    $f = ($_POST["c"] * 9/5) + 32;
+    $c = $_POST["c"];
+    $f = ($c * 9/5) + 32;
     echo "Fahrenheit: $f";
 }
 ?>
