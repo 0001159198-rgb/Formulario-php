@@ -12,7 +12,7 @@
 <?php
 if ($_POST) {
     $media = ($_POST['n1'] + $_POST['n2'] + $_POST['n3']) / 3;
-    echo "Média: $media <br>";
+    echo "Média: " . number_format($media, 2) . "<br>";
     echo ($media >= 7) ? "Aprovado" : "Reprovado";
 }
 ?>
